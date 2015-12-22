@@ -24,6 +24,8 @@
   <gap:plugin name="org.apache.cordova.geolocation"/>
   <gap:plugin name="org.apache.cordova.media"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="com.phonegap.plugin.statusbar" />
+  <preference name="StatusBarOverlaysWebView" value="false" />
   <icon src="res/icon/ios/icon-57.png"/>
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
