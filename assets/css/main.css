@@ -2844,7 +2844,7 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				margin-top: 20px;
+				margin-top: 0px;
 				height: 44px;
 				left: 0;
 				position: fixed;
