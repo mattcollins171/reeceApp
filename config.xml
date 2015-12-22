@@ -15,7 +15,7 @@
   <preference name="android-installLocation" value="auto"/>
   <preference name="SplashScreen" value="Default-667h@2x" />
   <preference name="AutoHideSplashScreen" value="true" />
-  <preference name="SplashScreenDelay" value="3000" />
+  <preference name="SplashScreenDelay" value="7000" />
   <gap:plugin name="org.apache.cordova.camera"/>
   <gap:plugin name="org.apache.cordova.media-capture"/>
   <gap:plugin name="org.apache.cordova.device"/>
@@ -25,7 +25,7 @@
   <gap:plugin name="org.apache.cordova.geolocation"/>
   <gap:plugin name="org.apache.cordova.media"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
-  <icon src="icon.png"/>
+  <icon src="res/icon/ios/icon-57.png"/>
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
   <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
