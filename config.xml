@@ -26,6 +26,7 @@
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="com.phonegap.plugin.statusbar" />
   <preference name="StatusBarOverlaysWebView" value="false" />
+  <preference name="backgroundColorByHexString" value="#7dbc23" />
   <icon src="res/icon/ios/icon-57.png"/>
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
