@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Monopoly Run - Recce</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1>Monopoly Run - Recce</h1>
+				</div>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>Recce</h2>
+										<p>Use the form below in order to update the details for a location on the Run.</p>
+									</header>
+
+									<form>
+									<div class="row 50%">
+										<div class="12u">
+											<select name="select-choice-1" id="places">
+												<option value="standard" selected="selected" disabled>Select your location</option>	
+											</select>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<input type="button" id="location" disabled class="button alt" value="Get Location Coordinates" />
+											<div style="display:none; margin-top: 30px;" id="positions">
+												<table style="text-align: center">
+													<tr>
+														<td>
+															<h4>Latitude</h4>
+														</td>
+														<td>
+															<h4>Longitude</h4>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span id="latOutput"></span>
+														</td>
+														<td>
+															<span id="longOutput"></span>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<input type="button" id="pic" disabled class="button alt" value="Get Picture" />
+											<div id="loader" style="text-align: center;display: none;">
+												<h4>Uploading image</h4>
+												<img src="images/loader.gif"/>
+											</div>
+											<div id="photo" style="text-align: center;display: none;">
+												<h4>Uploaded image</h4>
+												<img id="uploadedImage" width="250px" src=""/>
+											</div>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="textBoxError" style="padding: 15px 0px;display: none;">
+											You have missed out a question and/or an answer
+										</div>
+										<div class="12u">
+											<label><h4>Question</h4></label>
+											<textarea name="textarea" id="question" class="ui-disabled"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<label><h4>Answer</h4></label>
+											<textarea name="textarea" id="answer" class="ui-disabled"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<input type="hidden" id="long" name="long" value="">
+											<input type="hidden" id="lat" name="lat" value="">
+											<input type="hidden" id="photo" name="photo" value="">
+											<button type="button" class="button alt ui-disabled" id="submit">Submit Details</button>
+										</div>
+									</div>
+								</form>
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+					
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; Monopoly Run. All rights reserved</li>
+							</ul>
+						</div>
+
+				</div>
+				<div data-role="popup" id="popupDialog" data-overlay-theme="a" data-theme="a" data-dismissible="false" >
+				    <h1>Save Complete</h1>
+				    <p>All the information for this property has now been added to the system. The page will reload in 5 seconds.</p>
+				</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+
+	</body>
+</html>
