@@ -24,6 +24,7 @@
 		$.ajax({
 			url: "https://www.monopoly-run.co.uk/control/api/getPlaces",
 			async: false,
+			dataType: 'jsonp',
 			success: function(result){
 		        localStorage["places"] = result;
 	            var places = JSON.parse(localStorage["places"]);
