@@ -35,7 +35,7 @@
   <gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
   <gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
   <access origin="*"/>
-  <plugin name="cordova-plugin-whitelist" version="1"/>
+  <plugin name="cordova-plugin-whitelist"/>
   <allow-intent href="http://*/*"/>
   <access origin="*" />
   <allow-navigation href="*" />
