@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="monopoly-run.recce" version="1.0.1">
-  <name>Reece app</name>
+  <name>Recce app</name>
   <description>Reece App for the Monopoly Run</description>
   <author href="http://monopoly-run.co.uk" email="matt@monopoly-run.co.uk">Matt Collins</author>
   <content src="index.html"/>
