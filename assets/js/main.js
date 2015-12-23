@@ -23,7 +23,6 @@
 		
 		$.ajax({
 			url: "https://monopoly-run.co.uk/control/api/getPlaces",
-			dataType: "jsonp",
 			timeout: 20000,	
 			async: false,
 			success: function(result){
