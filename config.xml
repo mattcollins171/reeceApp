@@ -1,11 +1,11 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="monopoly-run.recce" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="monopoly-run.recce" version="1.0.1">
   <name>Reece app</name>
   <description>Reece App for the Monopoly Run</description>
   <author href="http://monopoly-run.co.uk" email="matt@monopoly-run.co.uk">Matt Collins</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="portrait"/>
-  <preference name="target-device" value="universal"/>
+  <preference name="target-device" value="handset"/>
   <preference name="detect-data-types" value="true"/>
   <preference name="exit-on-suspend" value="false"/>
   <preference name="show-splash-screen-spinner" value="true"/>
