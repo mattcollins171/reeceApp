@@ -33,6 +33,9 @@
 	                        text : places[x].placeName
 	                }));
 	            }
+		    },
+		    error: function(jqXHR, textStatus,errorThrown){
+			    alert(errorThrown);
 		    }
 		});
 		$( "#places" ).change(function() {
