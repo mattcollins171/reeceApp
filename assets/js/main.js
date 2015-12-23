@@ -35,6 +35,8 @@
 	            }
 		    },
 		    error: function(jqXHR, textStatus,errorThrown){
+			    alert(jqXHR);
+			    alert(textStatus);
 			    alert(errorThrown);
 		    }
 		});
