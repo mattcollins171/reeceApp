@@ -34,17 +34,8 @@
   <gap:splash src="res/screen/ios/Default-667h@2x.png" gap:platform="ios" width="640" height="1136"/>
   <gap:splash src="res/screen/ios/screen-ipad-portrait.png" gap:platform="ios" width="768" height="1024"/>
   <gap:splash src="res/screen/ios/screen-ipad-landscape.png" gap:platform="ios" width="1024" height="768"/>
-  <access origin="*"/>
-  <plugin name="cordova-plugin-whitelist"/>
-  <allow-intent href="http://*/*"/>
-  <access origin="*" />
-  <allow-navigation href="*" />
-  <platform name="android">
-    <allow-intent href="market:*"/>
-    
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*"/>
-    <allow-intent href="itms-apps:*"/>
-  </platform>
+  <gap:plugin name="cordova-plugin-whitelist" version="1.1.0" source="npm" />
+  <access origin="*" launch-external="yes" />
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
 </widget>
