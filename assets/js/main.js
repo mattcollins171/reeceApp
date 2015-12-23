@@ -22,7 +22,6 @@
 		var path = "";
 		
 		$.ajax({
-			method: "POST",
 			url: "https://monopoly-run.co.uk/control/api/getPlaces",
 			async: false,
 			success: function(result){
