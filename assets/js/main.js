@@ -23,7 +23,8 @@
 		
 		$.ajax({
 			url: "https://monopoly-run.co.uk/control/api/getPlaces",
-			dataType: "json",	
+			dataType: "json",
+			timeout: 20000,	
 			async: false,
 			success: function(result){
 		        localStorage["places"] = result;
