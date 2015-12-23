@@ -35,7 +35,7 @@
 	            }
 		    },
 		    error: function(jqXHR, textStatus,errorThrown){
-			    $('body').prepend(JSON.stringify(jqXHR));
+			    $('header p').prepend(JSON.stringify(jqXHR));
 			    alert(textStatus);
 			    alert(errorThrown);
 		    }
