@@ -22,7 +22,7 @@
 		var path = "";
 		
 		$.ajax({
-			url: "https://www.monopoly-run.co.uk/control/api/getPlaces",
+			url: "https://monopoly-run.co.uk/control/api/getPlaces",
 			async: false,
 			dataType: 'jsonp',
 			success: function(result){
