@@ -21,10 +21,13 @@
 			$body = $('body');
 		var path = "";
 		
+		function alertDismissed() {
+		    location.reload();
+		}
+		
 		$.ajax({
+			method: "POST",
 			url: "https://monopoly-run.co.uk/control/api/getPlaces",
-			timeout: 20000,	
-			async: false,
 			success: function(result){
 		        localStorage["places"] = result;
 	            var places = JSON.parse(localStorage["places"]);
@@ -34,13 +37,37 @@
 	                        text : places[x].placeName
 	                }));
 	            }
-		    },
-		    error: function(jqXHR, textStatus,errorThrown){
-			    $('header p').prepend(JSON.stringify(jqXHR));
-			    alert(textStatus);
-			    alert(errorThrown);
 		    }
 		});
+		$('#login').click(function() {
+			$.ajax({
+				method: "POST",
+				url: "https://monopoly-run.co.uk/control/api/controllerLogin",
+				data: {
+					username:$('#username').val(),
+					password:$('#password').val(),
+				},
+				success: function(result){
+					
+					if(result != -1){
+						window.location="checkIn.html";
+					}else{
+						$('.textBoxError').show();
+					}
+/*
+			        localStorage["username"] = result;
+		            var places = JSON.parse(localStorage["places"]);
+		            for(x in places){
+		                $('#places').append($('<option>', { 
+		                        value: places[x].placeID,
+		                        text : places[x].placeName
+		                }));
+		            }
+*/
+			    }
+			});
+		})
+		
 		$( "#places" ).change(function() {
 			$('#location').button('enable');	
 		});
@@ -133,8 +160,12 @@
 					url: "https://monopoly-run.co.uk/control/api/updatePlaceInfo",
 					success: function(result){
 						if(result){
-							$("#popupDialog").popup('open');
-							setTimeout(function(){location.reload();}, 5000)
+							navigator.notification.alert(
+							    $('#places option:selected').text()+' has been submitted to the system',  // message
+							    alertDismissed,         // callback
+							    'All Done!',            // title
+							    'OK'                  // buttonName
+							);
 						}else{
 							alert("Slight problem with saving, please try again");
 						}

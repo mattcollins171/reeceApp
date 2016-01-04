@@ -35,28 +35,77 @@
 
 								<article>
 									<header>
-										<h2>Login</h2>
-										<p>Please note that this app is only for the control team, if you are looking for the main app for the Run, please search for 'Monopoly Run'</p>
+										<h2>Recce</h2>
+										<p>Use the form below in order to update the details for a location on the Run.</p>
 									</header>
 
 									<form>
-									
 									<div class="row 50%">
-										<div class="textBoxError" style="width:100%;padding: 15px 0px;display: none;">
-											Sorry wrong username and/or password.
-										</div>
 										<div class="12u">
-											<label><h4>Username</h4></label>
-											<input type="text" name="username" id="username" class="">
-										</div>
-										<div class="12u">
-											<label><h4>Password</h4></label>
-											<input type="password" name="password" id="password" class=""/>
+											<select name="select-choice-1" id="places">
+												<option value="standard" selected="selected" disabled>Select your location</option>	
+											</select>
 										</div>
 									</div>
 									<div class="row 50%">
 										<div class="12u">
-											<button type="button" class="button alt" id="login">Login</button>
+											<input type="button" id="location" disabled class="button alt" value="Get Location Coordinates" />
+											<div style="display:none; margin-top: 30px;" id="positions">
+												<table style="text-align: center">
+													<tr>
+														<td>
+															<h4>Latitude</h4>
+														</td>
+														<td>
+															<h4>Longitude</h4>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<span id="latOutput"></span>
+														</td>
+														<td>
+															<span id="longOutput"></span>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<input type="button" id="pic" disabled class="button alt" value="Get Picture" />
+											<div id="loader" style="text-align: center;display: none;">
+												<h4>Uploading image</h4>
+												<img src="images/loader.gif"/>
+											</div>
+											<div id="photo" style="text-align: center;display: none;">
+												<h4>Uploaded image</h4>
+												<img id="uploadedImage" width="250px" src=""/>
+											</div>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="textBoxError" style="padding: 15px 0px;display: none;">
+											You have missed out a question and/or an answer
+										</div>
+										<div class="12u">
+											<label><h4>Question</h4></label>
+											<textarea name="textarea" id="question" class="ui-disabled"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<label><h4>Answer</h4></label>
+											<textarea name="textarea" id="answer" class="ui-disabled"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<input type="hidden" id="long" name="long" value="">
+											<input type="hidden" id="lat" name="lat" value="">
+											<input type="hidden" id="photo" name="photo" value="">
+											<button type="button" class="button alt ui-disabled" id="submit">Submit Details</button>
 										</div>
 									</div>
 								</form>

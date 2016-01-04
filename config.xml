@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="monopoly-run.recce" version="1.0.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="monopoly-run.recce" version="1.1">
   <name>Recce app</name>
   <description>Reece App for the Monopoly Run</description>
   <author href="http://monopoly-run.co.uk" email="matt@monopoly-run.co.uk">Matt Collins</author>
@@ -16,6 +16,7 @@
   <preference name="SplashScreen" value="Default-667h@2x" />
   <preference name="SplashScreenDelay" value="7000" />
   <gap:plugin name="org.apache.cordova.camera"/>
+  <gap:plugin name="org.apache.cordova.dialogs"/>
   <gap:plugin name="org.apache.cordova.media-capture"/>
   <gap:plugin name="org.apache.cordova.device"/>
   <gap:plugin name="org.apache.cordova.device-orientation"/>

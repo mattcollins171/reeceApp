@@ -2335,7 +2335,7 @@
 
 	#header {
 		text-align: center;
-		padding: 0 0 0 0;
+		padding: 3em 0 0 0;
 		background-color: #fff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
@@ -2844,7 +2844,7 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				margin-top: 0px;
+				margin-top: 00px;
 				height: 44px;
 				left: 0;
 				position: fixed;
