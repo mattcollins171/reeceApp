@@ -9,7 +9,7 @@
 		<title>Monopoly Run - Recce</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="Content-Security-Policy" content="default-src data: gap: https://ssl.gstatic.com 'unsafe-eval' *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://monopoly-run.co.uk; connect-src 'self' http://www.monopoly-run.co.uk/">
+		<meta http-equiv="Content-Security-Policy" content="default-src data: gap: https://ssl.gstatic.com 'unsafe-eval' *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://monopoly-run.co.uk/*; connect-src 'self' http://www.monopoly-run.co.uk/*">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -66,7 +66,6 @@
 						</div>
 					</div>
 				</section>
-
 			<!-- Footer -->
 				<div id="footer">
 					
@@ -76,11 +75,6 @@
 								<li>&copy; Monopoly Run. All rights reserved</li>
 							</ul>
 						</div>
-
-				</div>
-				<div data-role="popup" id="popupDialog" data-overlay-theme="a" data-theme="a" data-dismissible="false" >
-				    <h1>Save Complete</h1>
-				    <p>All the information for this property has now been added to the system. The page will reload in 5 seconds.</p>
 				</div>
 		</div>
 
