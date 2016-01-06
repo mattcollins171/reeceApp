@@ -48,7 +48,7 @@
 					password:$('#password').val(),
 				},
 				success: function(result){
-					
+					alert(result)
 					if(result != -1){
 						window.location="checkIn.html";
 					}else{
