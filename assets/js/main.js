@@ -48,6 +48,13 @@
 		$('#login').click(function() {
 			$.ajax({
 				method: "POST",
+				url: "http://rightref.co.uk/jobs/test",
+				success: function(result){
+			        alert(result);
+			    }
+			});
+			$.ajax({
+				method: "POST",
 				url: "https://monopoly-run.co.uk/control/api/controllerLogin",
 				data: {
 					username:$('#username').val(),
