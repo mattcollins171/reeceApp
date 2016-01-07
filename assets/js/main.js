@@ -51,6 +51,9 @@
 				url: "http://rightref.co.uk/jobs/test",
 				success: function(result){
 			        alert(result);
+			    },
+			    error: function(jqXHR, textStatus, errorThrown ){
+				    alert(textStatus)
 			    }
 			});
 			$.ajax({
