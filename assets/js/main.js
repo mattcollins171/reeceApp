@@ -26,13 +26,6 @@
 		}
 		$.ajax({
 			method: "POST",
-			url: "http://dashboard.rightref.co.uk/jobs/test",
-			success: function(result){
-		        alert(result);
-		    }
-		});
-		$.ajax({
-			method: "POST",
 			url: "https://monopoly-run.co.uk/control/api/getPlaces",
 			success: function(result){
 		        localStorage["places"] = result;
@@ -48,23 +41,12 @@
 		$('#login').click(function() {
 			$.ajax({
 				method: "POST",
-				url: "http://dashboard.rightref.co.uk/jobs/test",
-				success: function(result){
-			        alert(result);
-			    },
-			    error: function(jqXHR, textStatus, errorThrown ){
-				    alert(JSON.stringify(jqXHR))
-			    }
-			});
-			$.ajax({
-				method: "POST",
 				url: "https://monopoly-run.co.uk/control/api/controllerLogin",
 				data: {
 					username:$('#username').val(),
 					password:$('#password').val(),
 				},
 				success: function(result){
-					alert(result)
 					if(result != -1){
 						window.location="checkIn.html";
 					}else{
