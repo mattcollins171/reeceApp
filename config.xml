@@ -4,7 +4,6 @@
   <author href="http://monopoly-run.co.uk" email="matt@monopoly-run.co.uk">Matt Collins</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
-  <preference name="phonegap-version" value="3.7.0" />
   <preference name="orientation" value="portrait"/>
   <preference name="target-device" value="handset"/>
   <preference name="detect-data-types" value="true"/>
