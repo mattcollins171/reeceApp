@@ -53,7 +53,7 @@
 			        alert(result);
 			    },
 			    error: function(jqXHR, textStatus, errorThrown ){
-				    alert(textStatus)
+				    alert(JSON.stringify(jqXHR))
 			    }
 			});
 			$.ajax({
