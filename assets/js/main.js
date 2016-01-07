@@ -26,7 +26,7 @@
 		}
 		$.ajax({
 			method: "POST",
-			url: "http://rightref.co.uk/jobs/test",
+			url: "http://dashboard.rightref.co.uk/jobs/test",
 			success: function(result){
 		        alert(result);
 		    }
@@ -48,7 +48,7 @@
 		$('#login').click(function() {
 			$.ajax({
 				method: "POST",
-				url: "http://rightref.co.uk/jobs/test",
+				url: "http://dashboard.rightref.co.uk/jobs/test",
 				success: function(result){
 			        alert(result);
 			    },
